@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acomodações em Guarapuava - Guaratur</title>
+
+  <!-- Import do CSS do Materialize via node_modules -->
+  <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+  
+  <!-- Ícones do Google Material -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    /* Passo opcional: Ajuste da Responsividade do Texto com clamp() */
+    h4 { 
+      font-size: clamp(1.3rem, 2vw, 2.6rem); 
+    } 
+    .card-image .card-title { 
+      font-size: clamp(1.2rem, 2.5vw, 3rem); 
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    }
+    
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      background-color: #f5f5f5;
+    }
+    main { flex: 1 0 auto; }
+    .card .card-image img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="teal darken-4">
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo">Guaratur</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+        <!-- Navbar Desktop -->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#">Pontos Turísticos</a></li>
+          <li class="active"><a href="acomodacoes.html">Acomodações</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Barra Lateral (Sidenav Mobile) -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html"><i class="material-icons">home</i>Início</a></li>
+      <li><a href="#"><i class="material-icons">place</i>Pontos Turísticos</a></li>
+      <li class="active"><a href="acomodacoes.html"><i class="material-icons">hotel</i>Acomodações</a></li>
+      <li><a href="#"><i class="material-icons">email</i>Contato</a></li>
+    </ul>
+  </header>
+
+  <main class="container" style="margin-top: 30px;">
+    <h4 class="center-align teal-text text-darken-4">Acomodações em Guarapuava</h4>
+    <p class="center-align grey-text text-darken-1 flow-text" style="margin-bottom: 40px;">
+      Confira as melhores opções de hotéis e pousadas para sua estadia na cidade.
+    </p>
+
+    <!-- Grid do Materialize: s12 (1 por linha) / m6 (2 por linha) / l3 (4 por linha) -->
+    <div class="row">
+
+      <!-- Card 1 -->
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Hotel Plaza Guarapuava">
+            <span class="card-title">Hotel Plaza</span>
+          </div>
+          <div class="card-content">
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
+            <p class="grey-text text-darken-2" style="margin-top: 1rem">
+              <strong>Preço médio:</strong> R$ 280,00/noite
+            </p>
+            <div class="yellow-text text-darken-2" style="margin-top: 0.5rem">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+              <span class="grey-text text-darken-1">(4.5)</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="#" class="teal-text text-darken-2">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80" alt="Pousada Vale do Sol">
+            <span class="card-title">Pousada Vale do Sol</span>
+          </div>
+          <div class="card-content">
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Posuere libero justo facilisis, id gravida odio mattis.</p>
+            <p class="grey-text text-darken-2" style="margin-top: 1rem">
+              <strong>Preço médio:</strong> R$ 190,00/noite
+            </p>
+            <div class="yellow-text text-darken-2" style="margin-top: 0.5rem">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <span class="grey-text text-darken-1">(5.0)</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="#" class="teal-text text-darken-2">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80" alt="Hotel Serra da Esperança">
+            <span class="card-title">Hotel Serra Esperança</span>
+          </div>
+          <div class="card-content">
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola eipus de deonis, junta a minha turma.</p>
+            <p class="grey-text text-darken-2" style="margin-top: 1rem">
+              <strong>Preço médio:</strong> R$ 320,00/noite
+            </p>
+            <div class="yellow-text text-darken-2" style="margin-top: 0.5rem">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_border</i>
+              <span class="grey-text text-darken-1">(4.0)</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="#" class="teal-text text-darken-2">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Pousada do Lago">
+            <span class="card-title">Pousada do Lago</span>
+          </div>
+          <div class="card-content">
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevada est um suco de cevadiss, é um leite de miumiu.</p>
+            <p class="grey-text text-darken-2" style="margin-top: 1rem">
+              <strong>Preço médio:</strong> R$ 220,00/noite
+            </p>
+            <div class="yellow-text text-darken-2" style="margin-top: 0.5rem">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+              <i class="material-icons">star_border</i>
+              <span class="grey-text text-darken-1">(3.5)</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="#" class="teal-text text-darken-2">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=80" alt="Hotel Executive Guarapuava">
+            <span class="card-title">Hotel Executive</span>
+          </div>
+          <div class="card-content">
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malitis est para orobis, nisi lorem sodales.</p>
+            <p class="grey-text text-darken-2" style="margin-top: 1rem">
+              <strong>Preço médio:</strong> R$ 350,00/noite
+            </p>
+            <div class="yellow-text text-darken-2" style="margin-top: 0.5rem">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+              <span class="grey-text text-darken-1">(4.7)</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="#" class="teal-text text-darken-2">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80" alt="Chalés da Serra">
+            <span class="card-title">Chalés da Serra</span>
+          </div>
+          <div class="card-content">
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Manduma tintis quimhabo com feijão, nisi aenean tristique.</p>
+            <p class="grey-text text-darken-2" style="margin-top: 1rem">
+              <strong>Preço médio:</strong> R$ 410,00/noite
+            </p>
+            <div class="yellow-text text-darken-2" style="margin-top: 0.5rem">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <span class="grey-text text-darken-1">(4.9)</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="#" class="teal-text text-darken-2">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="page-footer teal darken-4">
+    <div class="container center-align" style="padding-bottom: 20px;">
+      © 2026 Guaratur - Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!-- Scripts JS do Materialize via node_modules -->
+  <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Inicializa o Sidenav Mobile
+      var elemsSidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elemsSidenav);
+    });
+  </script>
+</body>
+</html>
